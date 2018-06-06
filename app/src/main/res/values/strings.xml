@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">TechnoNews</string>
+    <string name="item_title">Gillian Triggs joins call for digital rights reforms after brush with data\'s dark side</string>
+    <string name="item_author">News Author</string>
+    <string name="item_description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.</string>
+    <string name="empty_text">Sorry Mr/Ms User Currently No Technology News On The World Check The App Later When World Wakeup :(</string>
+    <string name="no_internet">No Internet Connection</string>
+    <string name="item_section">News Section</string>
+    <string name="item_date">2018-05-14</string>
+    <string name="setting">Setting</string>
+    <string name="news_number_default">30</string>
+    <string name="news_number_key">news_number</string>
+    <string name="news_number_title">Number Of News</string>
+    <string name="news_type_title">News Type</string>
+    <string name="news_type_key">news_type</string>
+    <string name="news_type_default_value">technology</string>
+    <string name="news_type_default_label">technology</string>
+    <string name="news_type_games_label">Games</string>
+    <string name="news_type_games_value">games</string>
+    <string name="news_type_business_label">Business</string>
+    <string name="news_type_business_value">business</string>
+    <string name="news_type_politics_label">Politics</string>
+    <string name="news_type_politics_value">politics</string>
+</resources>

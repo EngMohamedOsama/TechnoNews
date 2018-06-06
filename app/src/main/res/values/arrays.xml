@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_news_type_labels">
+        <item>@string/news_type_default_label</item>
+        <item>@string/news_type_business_label</item>
+        <item>@string/news_type_games_label</item>
+        <item>@string/news_type_politics_label</item>
+    </string-array>
+
+    <string-array name="settings_news_type_values">
+        <item>@string/news_type_default_value</item>
+        <item>@string/news_type_business_value</item>
+        <item>@string/news_type_games_value</item>
+        <item>@string/news_type_politics_value</item>
+    </string-array>
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/space16"
+    android:background="@android:drawable/dialog_holo_light_frame">
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/space150"
+        android:scaleType="centerCrop"
+        tools:background="@mipmap/ic_launcher" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_image">
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_image"
+            android:layout_marginLeft="@dimen/space8"
+            android:layout_marginRight="@dimen/space8"
+            android:layout_marginTop="@dimen/space8"
+            android:textColor="@color/title_color"
+            android:textStyle="bold"
+            tools:ignore="NotSibling"
+            tools:text="@string/item_title" />
+
+        <TextView
+
+            android:id="@+id/item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_title"
+            android:layout_marginBottom="@dimen/space8"
+            android:layout_marginLeft="@dimen/space8"
+            android:layout_marginStart="@dimen/space8"
+            android:textColor="@color/date_color"
+            android:textSize="@dimen/size10"
+            android:textStyle="italic"
+            tools:ignore="SmallSp"
+            tools:text="@string/item_date" />
+
+        <TextView
+            android:id="@+id/item_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_date"
+            android:layout_marginLeft="@dimen/space8"
+            android:layout_marginRight="@dimen/space8"
+            android:lines="5"
+            android:textColor="@color/description_color"
+            tools:text="@string/item_description" />
+
+        <TextView
+            android:id="@+id/item_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/item_description"
+            android:layout_margin="@dimen/space8"
+            android:textColor="@color/colorAccent"
+            tools:text="@string/item_author" />
+
+        <TextView
+            android:id="@+id/item_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/item_description"
+            android:layout_margin="@dimen/space8"
+            android:textColor="@color/colorAccent"
+            tools:text="@string/item_section" />
+    </RelativeLayout>
+
+</RelativeLayout>

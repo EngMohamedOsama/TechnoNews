@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="TechnoNews Setting">
+    <ListPreference
+        android:defaultValue="@string/news_type_default_value"
+        android:entries="@array/settings_news_type_labels"
+        android:entryValues="@array/settings_news_type_values"
+        android:key="@string/news_type_key"
+        android:title="@string/news_type_title" />
+    <EditTextPreference
+        android:defaultValue="@string/news_number_default"
+        android:inputType="numberDecimal"
+        android:key="@string/news_number_key"
+        android:title="@string/news_number_title" />
+</PreferenceScreen>
