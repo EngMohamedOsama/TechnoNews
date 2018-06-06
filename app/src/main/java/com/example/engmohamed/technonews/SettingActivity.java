@@ -9,13 +9,6 @@ import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
-/**
- * Ask Monitor why $TechnoNewsPreferencesFragment on layout >> activity_setting
- * SetSummary function more details
- * bindPreferenceSummaryToValue Function more details
- * index check onPreferenceChange more details
- */
-
 public class SettingActivity extends AppCompatActivity {
 
     @Override

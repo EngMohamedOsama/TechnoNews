@@ -20,19 +20,20 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import butterknife.BindView;
+
 public class TechnoNewsActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<ArrayList<TechnoNews>> {
 
     // URL for News data from Guardian APIs
-
-    // private static final String REQUEST_URL = "http://content.guardianapis.com/search?section=technology&order-by=newest&show-fields=headline%2Cstandfirst%2Cbyline%2Cthumbnail%2CbodyText&page-size=30&api-key=9369626e-5ce2-4c1c-87c7-7511701d23fc";
-    // private static final String REQUEST_URL = "http://content.guardianapis.com/search?section=technology&order-by=newest&show-fields=headline%252Cstandfirst%252Cbyline%252Cthumbnail%252CbodyText&page-size=30&api-key=9369626e-5ce2-4c1c-87c7-7511701d23fc";
-
     private static final String REQUEST_URL = "http://content.guardianapis.com/search";
-    // Initialized as global VARs to reuse it in onLoadFinished
+
+    // XML References
+    @BindView(R.id.empty_view) TextView emptyText;
+    @BindView(R.id.load_bar) ProgressBar loadBar;
+    @BindView(R.id.list) ListView newsList;
+
+    // Initialized as global Adaptor to reuse it in onLoadFinished
     private TechnoNewsAdaptor listAdaptor;
-    private ListView newsList;
-    private TextView emptyText;
-    private ProgressBar loadBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,22 +46,13 @@ public class TechnoNewsActivity extends AppCompatActivity implements LoaderManag
         // Get the network Info
         NetworkInfo internetCheck = internetService.getActiveNetworkInfo();
 
-        // Find a reference for empty text
-        emptyText = findViewById(R.id.empty_view);
-
         // Check for internet connection availability
         if (!(internetCheck != null && internetCheck.isConnectedOrConnecting())) {
             emptyText.setText(R.string.no_internet);
         }
 
-        // Find a reference to Progress Bar
-        loadBar = findViewById(R.id.load_bar);
-
         // Create a new adapter that takes an empty list of News as input
         listAdaptor = new TechnoNewsAdaptor(this, new ArrayList<TechnoNews>());
-
-        // Find a reference to the {@link ListView} in the layout
-        newsList = findViewById(R.id.list);
 
         // Set the adapter on the {@link ListView}
         // so the list can be populated in the user interface
