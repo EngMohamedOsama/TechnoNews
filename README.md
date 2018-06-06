@@ -1,6 +1,6 @@
 # TechnoNews Android APP
-News APP cover varity of topics like games, politics.... ETC 
-The main focus on this APP is showing my apility to do Network
+News APP cover varity of topics like games, politics.... ETC  
+The main focus on this APP is showing my apility to do Network  
 Operations, receive data from APIs, work with JSON
 
 APP Work Flow
