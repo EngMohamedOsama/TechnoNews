@@ -21,6 +21,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class TechnoNewsActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<ArrayList<TechnoNews>> {
 
@@ -39,6 +40,7 @@ public class TechnoNewsActivity extends AppCompatActivity implements LoaderManag
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_techno_news);
+        ButterKnife.bind(this);
 
         // Initialize Network State Service to check for internet connection
         ConnectivityManager internetService = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
